@@ -43,6 +43,7 @@ public class ProductActivity extends AppCompatActivity implements AdapterView.On
         adapter.setListItem(listProduct);
         adapter.notifyDataSetChanged();
         lvItem.setAdapter(adapter);
+        lvItem.setOnItemClickListener(this);
     }
 
     @Override
